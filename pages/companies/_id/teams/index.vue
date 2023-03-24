@@ -52,7 +52,7 @@
             <div class="text-xl font-medium text-dark">Available</div>
             <p class="text-grey">Empower company</p>
           </div>
-          <NuxtLink to="{name: 'teams-create'}" class="btn btn-primary"
+          <NuxtLink :to="{name: 'teams-create'}" class="btn btn-primary"
             >Build New Team</NuxtLink
           >
         </div>
@@ -101,5 +101,6 @@
 <script>
 export default {
   layout: 'dashboard',
+  middleware: 'auth',
 }
 </script>
